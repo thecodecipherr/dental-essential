@@ -9,3 +9,13 @@ module.exports = {
   },
   plugins: [],
 };
+theme: {
+  extend: {
+    colors: {
+      primary: '#3B82F6',
+      primaryDark: '#2563EB',
+      accent: '#EC4899',
+      lightBlue: '#DBEAFE',
+    },
+  },
+},
