@@ -145,34 +145,6 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Newsletter Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <div className="bg-gradient-to-r from-sky-500 to-blue-500 rounded-2xl p-8 md:p-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-              Stay Updated with Dental Tips
-            </h2>
-            <p className="text-sky-100 mb-8">
-              Subscribe to our newsletter for the latest dental health tips, special offers, 
-              and updates from Dental Essential.
-            </p>
-            <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-300"
-              />
-              <button
-                type="submit"
-                className="bg-white text-sky-600 hover:bg-sky-50 px-6 py-3 rounded-lg font-semibold transition-colors"
-              >
-                Subscribe
-              </button>
-            </form>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 text-center">

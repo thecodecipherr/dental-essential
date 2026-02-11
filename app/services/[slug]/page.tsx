@@ -70,11 +70,13 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Image Placeholder */}
+            {/* Service Image */}
             <div className="relative h-80 lg:h-96 bg-gradient-to-br from-sky-100 to-sky-200 rounded-2xl overflow-hidden shadow-lg">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-8xl opacity-40">🦷</span>
-              </div>
+              <img 
+                src={service.bannerImage} 
+                alt={service.title}
+                className="w-full h-full object-cover"
+              />
             </div>
 
             {/* Description */}
@@ -174,32 +176,6 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-sky-500 to-blue-500">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
-            Ready to Get Started?
-          </h2>
-          <p className="text-sky-100 mb-8 text-lg">
-            Schedule your consultation today and take the first step towards a healthier smile.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/book"
-              className="bg-white text-sky-600 hover:bg-sky-50 px-8 py-3 rounded-lg font-semibold shadow-lg transition-colors"
-            >
-              Book Appointment
-            </Link>
-            <Link
-              href="/contact"
-              className="border-2 border-white text-white hover:bg-white/10 px-8 py-3 rounded-lg font-semibold transition-colors"
-            >
-              Contact Us
-            </Link>
           </div>
         </div>
       </section>

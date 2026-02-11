@@ -8,11 +8,13 @@ interface ServiceCardProps {
 export default function ServiceCard({ service }: ServiceCardProps) {
   return (
     <div className="bg-white rounded-xl border-2 border-sky-100 overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
-      {/* Image Placeholder */}
+      {/* Service Image */}
       <div className="relative h-48 bg-gradient-to-br from-sky-100 to-sky-200 overflow-hidden">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-6xl opacity-50">🦷</span>
-        </div>
+        <img 
+          src={service.image} 
+          alt={service.title}
+          className="w-full h-full object-cover"
+        />
         {/* Overlay on hover */}
         <div className="absolute inset-0 bg-sky-500 opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
       </div>
