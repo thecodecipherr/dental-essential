@@ -124,6 +124,61 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* OUR CLINIC GALLERY */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">
+              <span className="text-pink-500">Our Modern</span>{' '}
+              <span className="text-sky-500">Clinic</span>
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Experience dental care in our state-of-the-art facility equipped with the latest technology
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {/* Large image */}
+            <div className="col-span-2 row-span-2">
+              <img 
+                src="/images/gallery/clinic-1.png" 
+                alt="Modern Treatment Room" 
+                className="w-full h-full object-cover rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+              />
+            </div>
+            {/* Smaller images */}
+            <div className="col-span-1">
+              <img 
+                src="/images/gallery/clinic-2.png" 
+                alt="Pediatric Room" 
+                className="w-full h-48 object-cover rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+              />
+            </div>
+            <div className="col-span-1">
+              <img 
+                src="/images/gallery/clinic-3.png" 
+                alt="Treatment Chair" 
+                className="w-full h-48 object-cover rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+              />
+            </div>
+            <div className="col-span-1">
+              <img 
+                src="/images/gallery/clinic-4.png" 
+                alt="Reception Area" 
+                className="w-full h-48 object-cover rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+              />
+            </div>
+            <div className="col-span-1">
+              <img 
+                src="/images/gallery/clinic-5.png" 
+                alt="X-Ray Equipment" 
+                className="w-full h-48 object-cover rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* DOCTOR SECTION */}
       <section className="bg-blue-300 py-20">
         <div className="max-w-5xl mx-auto px-4">
@@ -140,31 +195,6 @@ export default function HomePage() {
               <Link href="/doctors" className="bg-sky-500 text-white px-6 py-3 rounded-md">
                 Know More
               </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CONTACT PREVIEW */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-center text-3xl font-bold text-pink-500 mb-4">
-            Contact Us
-          </h2>
-          <p className="text-center text-gray-600 mb-12">
-            Book an Appointment to treat your teeth right now
-          </p>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gray-100 rounded-xl h-80" />
-            <div className="bg-white rounded-xl shadow p-6">
-              <input className="w-full border rounded p-3 mb-4" placeholder="First Name" />
-              <input className="w-full border rounded p-3 mb-4" placeholder="Email" />
-              <input className="w-full border rounded p-3 mb-4" placeholder="Phone" />
-              <textarea className="w-full border rounded p-3 mb-4" placeholder="Message" />
-              <button className="bg-sky-500 text-white px-6 py-3 rounded-md">
-                Book an Appointment
-              </button>
             </div>
           </div>
         </div>

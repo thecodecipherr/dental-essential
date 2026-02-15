@@ -127,6 +127,66 @@ export default function AboutPage() {
   </div>
 </section>
 
+      {/* OUR FACILITIES */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-center text-3xl font-bold mb-4">
+            <span className="text-pink-500">Our State-of-the-Art</span>{' '}
+            <span className="text-sky-500">Facilities</span>
+          </h2>
+          <p className="text-center text-gray-500 max-w-2xl mx-auto mb-12">
+            Step inside our modern, welcoming clinic designed for your comfort and equipped with cutting-edge dental technology.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {/* Main large image */}
+            <div className="md:col-span-2 md:row-span-2">
+              <img 
+                src="/images/gallery/clinic-1.png" 
+                alt="Modern Treatment Room" 
+                className="w-full h-full min-h-[300px] object-cover rounded-2xl shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
+              />
+            </div>
+            
+            {/* Side images */}
+            <div>
+              <img 
+                src="/images/gallery/clinic-2.png" 
+                alt="Pediatric Dental Room" 
+                className="w-full h-48 object-cover rounded-2xl shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
+              />
+            </div>
+            <div>
+              <img 
+                src="/images/gallery/clinic-3.png" 
+                alt="Treatment Chair" 
+                className="w-full h-48 object-cover rounded-2xl shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
+              />
+            </div>
+            
+            {/* Bottom images */}
+            <div>
+              <img 
+                src="/images/gallery/clinic-4.png" 
+                alt="Reception & Certificates" 
+                className="w-full h-48 object-cover rounded-2xl shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
+              />
+            </div>
+            <div>
+              <img 
+                src="/images/gallery/clinic-5.png" 
+                alt="Advanced X-Ray Machine" 
+                className="w-full h-48 object-cover rounded-2xl shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
+              />
+            </div>
+            <div className="bg-sky-500 rounded-2xl p-6 flex flex-col justify-center items-center text-white shadow-lg">
+              <span className="text-4xl font-bold">10+</span>
+              <span className="text-sm mt-2">Years of Excellence</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CONTACT SECTION */}
       <section className="py-20 bg-gray-50">
         <h2 className="text-center text-pink-500 text-3xl font-bold mb-2">
@@ -140,11 +200,14 @@ export default function AboutPage() {
 
           {/* MAP */}
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <Image
-              src="/map.png"
-              alt="Clinic Location"
-              width={600}
-              height={400}
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.5!2d73.1089!3d18.9934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7e87a387dce0d%3A0x4f1df832c453a63e!2sOld%20Panvel%2C%20Panvel%2C%20Navi%20Mumbai%2C%20Maharashtra%20410206!5e0!3m2!1sen!2sin!4v1708000000000!5m2!1sen!2sin"
+              width="100%"
+              height="300"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
               className="w-full"
             />
             <div className="p-4 text-gray-600 text-sm">

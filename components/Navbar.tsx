@@ -21,8 +21,22 @@ export default function Navbar() {
     >
       <nav className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="text-xl font-bold text-sky-600">
-          SmileCare
+        <Link href="/" className="flex items-center gap-3 group">
+          <div className="w-12 h-12 relative">
+            <img 
+              src="/images/RECEPTION LOGO.jpg" 
+              alt="Dental Essential Logo" 
+              className="w-full h-full object-contain"
+            />
+          </div>
+          <div className="flex flex-col">
+            <span className="text-xl font-bold text-sky-500 group-hover:text-sky-600 transition-colors leading-tight">
+              DENTAL
+            </span>
+            <span className="text-xl font-bold text-pink-500 group-hover:text-pink-600 transition-colors leading-tight">
+              ESSENTIAL
+            </span>
+          </div>
         </Link>
 
         {/* Desktop Menu */}

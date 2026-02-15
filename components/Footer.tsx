@@ -7,7 +7,14 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           {/* About Section */}
           <div>
-            <h3 className="text-white text-lg font-bold mb-4">Dental Essential</h3>
+            <div className="flex items-center gap-2 mb-4">
+              <img 
+                src="/images/RECEPTION LOGO.jpg" 
+                alt="Dental Essential" 
+                className="w-10 h-10 object-contain"
+              />
+              <h3 className="text-white text-lg font-bold">DENTAL ESSENTIAL</h3>
+            </div>
             <p className="text-sm mb-4">
               Providing exceptional dental care with the latest technology and compassionate service.
             </p>
