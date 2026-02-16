@@ -7,7 +7,7 @@ export default function AboutPage() {
       {/* HERO SECTION */}
       <div className="w-full h-[75vh] relative">
         <Image
-          src="/hero.jpg"
+          src="/smilewomen.png"
           alt="Dental Essential"
           fill
           className="object-cover"
