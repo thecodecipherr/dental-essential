@@ -187,61 +187,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* CONTACT SECTION */}
-      <section className="py-20 bg-gray-50">
-        <h2 className="text-center text-pink-500 text-3xl font-bold mb-2">
-          Contact Us
-        </h2>
-        <p className="text-center text-gray-500 mb-10">
-          Book an Appointment to treat your teeth right now
-        </p>
-
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 px-6">
-
-          {/* MAP */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.5!2d73.1089!3d18.9934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7e87a387dce0d%3A0x4f1df832c453a63e!2sOld%20Panvel%2C%20Panvel%2C%20Navi%20Mumbai%2C%20Maharashtra%20410206!5e0!3m2!1sen!2sin!4v1708000000000!5m2!1sen!2sin"
-              width="100%"
-              height="300"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="w-full"
-            />
-            <div className="p-4 text-gray-600 text-sm">
-              📍 Shop no. 16, Building No. 7/B, Gurusharnam Complex,
-              Vishrali Naka, Old Panvel – 410206
-            </div>
-          </div>
-
-          {/* FORM */}
-          <div className="bg-blue-50 p-6 rounded-lg shadow-lg">
-            <form className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
-                <input className="p-2 rounded border" placeholder="First name" />
-                <input className="p-2 rounded border" placeholder="Last name" />
-              </div>
-
-              <input className="w-full p-2 rounded border" placeholder="Email" />
-              <input className="w-full p-2 rounded border" placeholder="Phone" />
-
-              <textarea
-                className="w-full p-2 rounded border"
-                placeholder="Message"
-                rows={4}
-              />
-
-              <button className="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600">
-                Book an Appointment
-              </button>
-            </form>
-          </div>
-
-        </div>
-      </section>
-
     </div>
   );
 }

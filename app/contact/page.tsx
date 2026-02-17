@@ -48,27 +48,27 @@ export default function ContactPage() {
 
             <div className="grid md:grid-cols-2 gap-6">
               <input
-                className="p-3 border rounded-lg focus:ring-2 focus:ring-sky-400 outline-none"
+                className="p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-400 focus:border-sky-400 outline-none bg-white text-gray-900 placeholder:text-gray-500"
                 placeholder="First Name"
               />
               <input
-                className="p-3 border rounded-lg focus:ring-2 focus:ring-sky-400 outline-none"
+                className="p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-400 focus:border-sky-400 outline-none bg-white text-gray-900 placeholder:text-gray-500"
                 placeholder="Last Name"
               />
             </div>
 
             <input
-              className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-sky-400 outline-none"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-400 focus:border-sky-400 outline-none bg-white text-gray-900 placeholder:text-gray-500"
               placeholder="Email Address"
             />
 
             <input
-              className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-sky-400 outline-none"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-400 focus:border-sky-400 outline-none bg-white text-gray-900 placeholder:text-gray-500"
               placeholder="Phone Number"
             />
 
             <textarea
-              className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-sky-400 outline-none"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-400 focus:border-sky-400 outline-none bg-white text-gray-900 placeholder:text-gray-500"
               placeholder="Message"
               rows={4}
             />
