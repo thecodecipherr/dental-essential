@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
+import ReviewsCarousel from "@/components/ReviewsCarousel";
 
 export default function HomePage() {
 
@@ -184,66 +185,7 @@ export default function HomePage() {
       </section>
 
       {/* GOOGLE REVIEWS SECTION */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-10">
-            <div className="flex items-center justify-center gap-2 mb-3">
-              <img src="https://www.google.com/favicon.ico" alt="Google" className="w-6 h-6" />
-              <span className="text-xl font-bold text-gray-700">Google Reviews</span>
-            </div>
-            <div className="flex items-center justify-center gap-2 mb-2">
-              <span className="text-yellow-400 text-xl">★★★★★</span>
-              <span className="text-lg font-semibold text-gray-700">5.0</span>
-            </div>
-            <p className="text-gray-500 text-sm">Based on 100+ reviews</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { name: "Priya Sharma", avatar: "PS", date: "2 weeks ago", review: "Dr. Sameer and his team provided exceptional care during my root canal treatment. The procedure was painless and the follow-up care was outstanding. Highly recommend!" },
-              { name: "Rajesh Patel", avatar: "RP", date: "1 month ago", review: "My dental implant procedure was seamless. The clinic's modern equipment and Dr. Sameer's expertise gave me complete confidence. My new smile looks completely natural!" },
-              { name: "Anjali Desai", avatar: "AD", date: "3 weeks ago", review: "My kids actually look forward to their dental visits now! The pediatric care here is wonderful. The staff is so patient and gentle with children." },
-              { name: "Arjun Mehta", avatar: "AM", date: "1 month ago", review: "Got my braces done here and the transformation has been amazing. The team monitors progress regularly and the results exceeded my expectations!" },
-              { name: "Sneha Kulkarni", avatar: "SK", date: "2 months ago", review: "The smile designing treatment completely changed my confidence. Professional, caring staff and state-of-the-art facilities. Best dental clinic in Panvel!" },
-              { name: "Vikram Singh", avatar: "VS", date: "1 week ago", review: "Excellent experience with clear aligners treatment. Dr. Sameer explained the entire process clearly and the results are amazing. Highly recommended!" },
-            ].map((review, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
-              >
-                <div className="flex items-start gap-3 mb-3">
-                  <div className="w-10 h-10 rounded-full bg-sky-500 flex items-center justify-center text-white font-bold text-sm">
-                    {review.avatar}
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-800 text-sm">{review.name}</h4>
-                    <p className="text-xs text-gray-400">{review.date}</p>
-                  </div>
-                </div>
-                <div className="text-yellow-400 text-sm mb-2">★★★★★</div>
-                <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">{review.review}</p>
-                <div className="mt-3 pt-3 border-t border-gray-100">
-                  <img src="https://www.google.com/favicon.ico" alt="Google" className="w-4 h-4" />
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center mt-8">
-            <a
-              href="https://g.page/r/dental-essential/review"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sky-600 font-medium hover:text-sky-700 transition"
-            >
-              See All Reviews on Google
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </section>
+      <ReviewsCarousel />
     </main>
   );
 }
