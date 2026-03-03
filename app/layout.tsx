@@ -14,9 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-white">
         <Navbar />
-        <div className="pb-32">
+        <div>
           {children}
         </div>
         <Footer />

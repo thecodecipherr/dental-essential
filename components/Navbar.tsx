@@ -27,29 +27,19 @@ export default function Navbar() {
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/90 backdrop-blur-md shadow-md'
+          ? 'bg-white/95 backdrop-blur-md shadow-lg'
           : 'bg-white'
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <nav className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
 
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-12 h-12 relative">
-            <img
-              src="/images/RECEPTION LOGO.jpg"
-              alt="Dental Essential Logo"
-              className="w-full h-full object-contain"
-            />
-          </div>
-          <div className="leading-tight">
-            <span className="block text-lg font-bold text-sky-600 tracking-wide">
-              DENTAL
-            </span>
-            <span className="block text-lg font-bold text-gray-700 tracking-wide">
-              ESSENTIAL
-            </span>
-          </div>
+        {/* Logo Only */}
+        <Link href="/" className="flex items-center group">
+          <img
+            src="/images/logo.png"
+            alt="Dental Essential Logo"
+            className="h-14 w-auto object-contain"
+          />
         </Link>
 
         {/* Desktop Menu */}

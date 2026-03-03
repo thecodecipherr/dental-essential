@@ -15,9 +15,9 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    slug: "root-canal-treatment",
-    title: "Root Canal Treatment",
-    shortDescription: "Save your natural tooth with our painless root canal therapy using advanced techniques.",
+    slug: "painless-root-canal",
+    title: "Painless Root Canal Treatment",
+    shortDescription: "Save your natural tooth with our completely painless root canal therapy using advanced laser technology.",
     image: "/images/services/root-canal.jpg",
     bannerImage: "/images/services/root-canal.jpg",
     description: "Root canal treatment is a dental procedure designed to save a tooth that has become severely infected or decayed. At Dental Essential, we use state-of-the-art technology and gentle techniques to make this procedure virtually painless, preserving your natural tooth and restoring your smile.",
@@ -59,24 +59,46 @@ export const services: Service[] = [
     ]
   },
   {
-    slug: "braces-and-aligners",
-    title: "Braces and Aligners",
-    shortDescription: "Straighten your teeth with traditional braces or invisible aligners for a perfect smile.",
+    slug: "braces",
+    title: "Dental Braces",
+    shortDescription: "Traditional metal and ceramic braces for effective teeth straightening and bite correction.",
     image: "/images/services/braces-aligners.jpg",
     bannerImage: "/images/services/braces-aligners.jpg",
-    description: "Whether you prefer traditional metal braces or invisible aligners, we offer comprehensive orthodontic solutions to straighten your teeth and correct bite issues. Our orthodontic treatments are customized to achieve the best results for your unique smile.",
+    description: "Dental braces are the most effective solution for correcting crooked teeth, overcrowding, and bite issues. We offer both traditional metal braces and tooth-colored ceramic braces for a more aesthetic option during treatment.",
     benefits: [
-      "Corrects crooked and misaligned teeth",
+      "Highly effective for complex cases",
+      "Corrects severe misalignment",
+      "Options for metal or ceramic brackets",
       "Improves bite and jaw alignment",
-      "Enhances facial aesthetics",
-      "Easier cleaning and better oral hygiene",
-      "Boosts confidence with a beautiful smile"
+      "Predictable and reliable results"
     ],
     treatmentSteps: [
       { step: 1, title: "Orthodontic Assessment", description: "Complete examination, X-rays, and digital scans of your teeth." },
       { step: 2, title: "Treatment Planning", description: "Custom treatment plan with timeline and expected results." },
-      { step: 3, title: "Fitting", description: "Braces are bonded or aligners are fitted to begin treatment." },
-      { step: 4, title: "Regular Adjustments", description: "Periodic visits for adjustments and progress monitoring." },
+      { step: 3, title: "Bracket Placement", description: "Braces are carefully bonded to your teeth." },
+      { step: 4, title: "Regular Adjustments", description: "Monthly visits for wire adjustments and progress monitoring." },
+      { step: 5, title: "Retention", description: "Retainers provided to maintain your new smile." }
+    ]
+  },
+  {
+    slug: "clear-aligners",
+    title: "Clear Aligners",
+    shortDescription: "Invisible aligners for discreet teeth straightening without metal brackets or wires.",
+    image: "/images/services/braces-aligners.jpg",
+    bannerImage: "/images/services/braces-aligners.jpg",
+    description: "Clear aligners are virtually invisible, removable trays that gradually straighten your teeth. They're perfect for adults and teens who want a discreet orthodontic solution without the look of traditional braces.",
+    benefits: [
+      "Nearly invisible appearance",
+      "Removable for eating and cleaning",
+      "Comfortable with no metal brackets",
+      "Fewer dental visits required",
+      "See your results with 3D simulation"
+    ],
+    treatmentSteps: [
+      { step: 1, title: "Digital Scanning", description: "3D scans of your teeth to create your custom aligners." },
+      { step: 2, title: "Treatment Simulation", description: "See your projected results before starting treatment." },
+      { step: 3, title: "Aligner Delivery", description: "Receive your custom-made clear aligners." },
+      { step: 4, title: "Progress Check-ups", description: "Periodic visits to monitor your progress." },
       { step: 5, title: "Retention", description: "Retainers provided to maintain your new smile." }
     ]
   },

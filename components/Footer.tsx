@@ -7,18 +7,25 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           {/* About Section */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
+            <div className="flex items-center gap-3 mb-4">
               <img 
-                src="/images/RECEPTION LOGO.jpg" 
+                src="/images/logo.png" 
                 alt="Dental Essential" 
-                className="w-10 h-10 object-contain"
+                className="w-14 h-14 object-contain"
               />
-              <h3 className="text-white text-lg font-bold">DENTAL ESSENTIAL</h3>
             </div>
             <p className="text-sm mb-4">
               Providing exceptional dental care with the latest technology and compassionate service.
             </p>
-            <div className="flex gap-3">
+            <a 
+              href="https://www.practo.com/navi-mumbai/clinic/dental-essential-old-panvel"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors mb-4"
+            >
+              📅 Book on Practo
+            </a>
+            <div className="flex gap-3 mt-2">
               <a href="#" className="w-8 h-8 bg-sky-600 hover:bg-sky-700 rounded-full flex items-center justify-center transition-colors">
                 <span className="sr-only">Facebook</span>
                 <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -56,9 +63,10 @@ export default function Footer() {
           <div>
             <h3 className="text-white text-lg font-bold mb-4">Our Services</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/services/root-canal-treatment" className="hover:text-sky-400 transition-colors">Root Canal Treatment</Link></li>
+              <li><Link href="/services/painless-root-canal" className="hover:text-sky-400 transition-colors">Painless Root Canal</Link></li>
               <li><Link href="/services/dental-implants" className="hover:text-sky-400 transition-colors">Dental Implants</Link></li>
-              <li><Link href="/services/braces-and-aligners" className="hover:text-sky-400 transition-colors">Braces & Aligners</Link></li>
+              <li><Link href="/services/braces" className="hover:text-sky-400 transition-colors">Dental Braces</Link></li>
+              <li><Link href="/services/clear-aligners" className="hover:text-sky-400 transition-colors">Clear Aligners</Link></li>
               <li><Link href="/services/smile-designing" className="hover:text-sky-400 transition-colors">Smile Designing</Link></li>
               <li><Link href="/services/pediatric-dentistry" className="hover:text-sky-400 transition-colors">Pediatric Dentistry</Link></li>
             </ul>

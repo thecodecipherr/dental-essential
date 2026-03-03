@@ -4,8 +4,8 @@ export default function ContactPage() {
 
       {/* HEADER */}
       <div className="text-center mb-16 px-6">
-        <h1 className="text-4xl font-bold text-sky-700 mb-4">
-          Contact Us
+        <h1 className="text-4xl font-bold text-gray-800 mb-4">
+          Contact <span className="text-sky-600">Us</span>
         </h1>
         <p className="text-gray-500 max-w-xl mx-auto">
           Book your appointment and experience professional, gentle dental care.
@@ -18,7 +18,7 @@ export default function ContactPage() {
         {/* MAP SECTION */}
         <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.5!2d73.1089!3d18.9934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7e87a387dce0d%3A0x4f1df832c453a63e!2sOld%20Panvel%2C%20Panvel%2C%20Navi%20Mumbai%2C%20Maharashtra%20410206!5e0!3m2!1sen!2sin!4v1708000000000!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.748!2d73.1089!3d18.9934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7e87a387dce0d%3A0x4f1df832c453a63e!2sDental%20Essential!5e0!3m2!1sen!2sin!4v1709000000000!5m2!1sen!2sin"
             height="350"
             className="w-full"
             style={{ border: 0 }}
@@ -26,14 +26,36 @@ export default function ContactPage() {
             loading="lazy"
           />
 
-          <div className="p-6 text-gray-600">
-            <p className="font-semibold text-sky-700 mb-2">
-              📍 Our Clinic Address
-            </p>
-            <p>
-              Shop no. 16, Building No. 7/B, Gurusharnam Complex,  
-              Vishrali Naka, Old Panvel – 410206
-            </p>
+          <div className="p-6">
+            <div className="space-y-4">
+              <div className="flex items-start gap-3">
+                <span className="text-sky-600 text-xl">📍</span>
+                <div>
+                  <p className="font-semibold text-gray-800 mb-1">Our Clinic Address</p>
+                  <p className="text-gray-600 text-sm">
+                    Shop no. 16, Building No. 7/B, Gurusharnam Complex,<br />
+                    Vishrali Naka, Old Panvel – 410206
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-sky-600 text-xl">📞</span>
+                <div>
+                  <p className="font-semibold text-gray-800 mb-1">Phone</p>
+                  <p className="text-gray-600 text-sm">+91 877-9648573</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-sky-600 text-xl">🕐</span>
+                <div>
+                  <p className="font-semibold text-gray-800 mb-1">Working Hours</p>
+                  <p className="text-gray-600 text-sm">
+                    Mon - Sat: 10:00 AM – 2:00 PM / 5:00 PM – 9:00 PM<br />
+                    Sunday: Closed
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
