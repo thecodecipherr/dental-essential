@@ -94,7 +94,7 @@ export default function DoctorProfileCarousel() {
               
               <div className="mb-6">
                 <p className="font-bold text-gray-800">Chief Dentist,</p>
-                <p className="font-bold text-gray-800">10+ Years Experience</p>
+                <p className="font-bold text-gray-800">16+ Years Experience</p>
               </div>
 
               <p className="text-gray-600 leading-relaxed mb-8">
@@ -107,15 +107,15 @@ export default function DoctorProfileCarousel() {
               {/* Stats */}
               <div className="grid grid-cols-3 gap-4 border-t pt-8">
                 <div className="text-center">
-                  <p className="text-2xl md:text-3xl font-bold text-gray-800">5000+</p>
+                  <p className="text-2xl md:text-3xl font-bold text-gray-800">200+</p>
                   <p className="text-gray-500 text-sm">Patients Treated</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-2xl md:text-3xl font-bold text-gray-800">10+</p>
-                  <p className="text-gray-500 text-sm">Dental Certificates</p>
+                  <p className="text-2xl md:text-3xl font-bold text-gray-800">1</p>
+                  <p className="text-gray-500 text-sm">Certificate</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-2xl md:text-3xl font-bold text-gray-800">10+</p>
+                  <p className="text-2xl md:text-3xl font-bold text-gray-800">16+</p>
                   <p className="text-gray-500 text-sm">Years Experience</p>
                 </div>
               </div>

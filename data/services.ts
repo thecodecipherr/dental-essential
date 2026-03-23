@@ -84,8 +84,8 @@ export const services: Service[] = [
     slug: "clear-aligners",
     title: "Clear Aligners",
     shortDescription: "Invisible aligners for discreet teeth straightening without metal brackets or wires.",
-    image: "/images/services/braces-aligners.jpg",
-    bannerImage: "/images/services/braces-aligners.jpg",
+    image: "/images/services/Clear Aligners.jpg",
+    bannerImage: "/images/services/Clear Aligners.jpg",
     description: "Clear aligners are virtually invisible, removable trays that gradually straighten your teeth. They're perfect for adults and teens who want a discreet orthodontic solution without the look of traditional braces.",
     benefits: [
       "Nearly invisible appearance",

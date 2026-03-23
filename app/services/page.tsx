@@ -69,13 +69,45 @@ export default function ServicesPage() {
 
           <div className="grid md:grid-cols-4 gap-6">
             {[
-              { icon: "🏆", title: "Award Winning", desc: "Recognized for excellence in dental care" },
-              { icon: "⚡", title: "Latest Technology", desc: "State-of-the-art equipment and techniques" },
-              { icon: "💝", title: "Gentle Care", desc: "Pain-free treatments with patient comfort" },
-              { icon: "👨‍⚕️", title: "Expert Team", desc: "Highly qualified and experienced dentists" },
+              {
+                icon: (
+                  <svg className="w-10 h-10 text-amber-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 4V2H8v2H4v3a4 4 0 004 4h.09A6.002 6.002 0 0011 15.91V18H8v2h8v-2h-3v-2.09A6.002 6.002 0 0015.91 11H16a4 4 0 004-4V4h-4z" />
+                  </svg>
+                ),
+                title: "Award Winning",
+                desc: "Recognized for excellence in dental care"
+              },
+              {
+                icon: (
+                  <svg className="w-10 h-10 text-orange-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                ),
+                title: "Latest Technology",
+                desc: "State-of-the-art equipment and techniques"
+              },
+              {
+                icon: (
+                  <svg className="w-10 h-10 text-pink-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                ),
+                title: "Gentle Care",
+                desc: "Pain-free treatments with patient comfort"
+              },
+              {
+                icon: (
+                  <svg className="w-10 h-10 text-sky-600 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5V10a2 2 0 00-2-2h-3M2 20h5M7 20v-4a2 2 0 012-2h6a2 2 0 012 2v4M7 20h10M12 12a4 4 0 100-8 4 4 0 000 8z" />
+                  </svg>
+                ),
+                title: "Expert Team",
+                desc: "Highly qualified and experienced dentists"
+              },
             ].map((item, i) => (
               <div key={i} className="bg-white p-6 rounded-xl shadow-sm text-center border border-sky-50 hover:border-sky-200 transition-colors">
-                <span className="text-4xl mb-4 block">{item.icon}</span>
+                <span className="mb-4 block">{item.icon}</span>
                 <h3 className="font-semibold text-gray-800 mb-2">{item.title}</h3>
                 <p className="text-gray-600 text-sm">{item.desc}</p>
               </div>

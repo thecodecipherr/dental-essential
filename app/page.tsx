@@ -36,7 +36,9 @@ export default function HomePage() {
             </Link>
 
             <div className="ml-4 mt-8 bg-white shadow rounded-lg px-8 py-3 inline-flex items-center gap-3 border border-gray-200">
-              <span className="text-yellow-500">🏆</span>
+              <svg className="w-5 h-5 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 4V2H8v2H4v3a4 4 0 004 4h.09A6.002 6.002 0 0011 15.91V18H8v2h8v-2h-3v-2.09A6.002 6.002 0 0015.91 11H16a4 4 0 004-4V4h-4z" />
+              </svg>
               <span className="text-sm font-medium">
                 Famdent Award Winner
               </span>
@@ -80,7 +82,10 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="bg-white text-sky-600 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition flex items-center gap-2 shadow-lg"
             >
-              📅 Book on Practo
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10m-13 9h16a1 1 0 001-1V7a1 1 0 00-1-1H4a1 1 0 00-1 1v12a1 1 0 001 1z" />
+              </svg>
+              <span>Book on Practo</span>
             </a>
             <Link
               href="/contact"
