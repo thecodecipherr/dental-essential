@@ -3,6 +3,8 @@
 import { FormEvent, useState } from 'react';
 
 export default function ContactPage() {
+  const formspreeEndpoint = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT;
+
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -15,22 +17,42 @@ export default function ContactPage() {
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+
+    if (!formspreeEndpoint) {
+      setFormStatus({
+        type: 'error',
+        message: 'Form is not configured yet. Please set NEXT_PUBLIC_FORMSPREE_ENDPOINT in .env.local.',
+      });
+      return;
+    }
+
     setIsSubmitting(true);
     setFormStatus(null);
 
     try {
-      const response = await fetch('/api/appointment', {
+      const response = await fetch(formspreeEndpoint, {
         method: 'POST',
         headers: {
+          Accept: 'application/json',
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+          _subject: `New Appointment Request - ${formData.firstName} ${formData.lastName}`,
+        }),
       });
 
-      const result = (await response.json()) as { success?: boolean; error?: string };
+      const result = (await response.json()) as {
+        ok?: boolean;
+        errors?: Array<{ message?: string }>;
+      };
 
       if (!response.ok) {
-        throw new Error(result.error || 'Failed to submit form.');
+        throw new Error(result.errors?.[0]?.message || 'Failed to submit form.');
       }
 
       setFormStatus({
