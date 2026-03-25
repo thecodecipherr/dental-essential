@@ -29,7 +29,7 @@ export default function HomePage() {
             </p>
 
             <Link
-              href="/book"
+              href="/contact"
               className="inline-block mt-8 bg-sky-500 hover:bg-sky-600 transition text-white px-8 py-3 rounded-md shadow-lg"
             >
               Book Appointment

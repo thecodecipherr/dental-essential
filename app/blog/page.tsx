@@ -183,7 +183,7 @@ export default function BlogPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/book"
+              href="/contact"
               className="bg-sky-500 hover:bg-sky-600 text-white px-8 py-3 rounded-lg font-semibold shadow-lg transition-colors"
             >
               Book Appointment

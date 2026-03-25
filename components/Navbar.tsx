@@ -68,14 +68,6 @@ export default function Navbar() {
             </Link>
           ))}
 
-          {/* Book Button */}
-          <Link
-            href="/book"
-            className="bg-sky-600 hover:bg-sky-700 text-white px-6 py-2 rounded-full shadow-md transition duration-300 text-sm"
-          >
-            Book Appointment
-          </Link>
-
         </div>
 
         {/* Mobile Button */}
@@ -109,15 +101,6 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-
-            <Link
-              href="/book"
-              onClick={() => setOpen(false)}
-              className="bg-sky-600 text-center text-white px-6 py-3 rounded-full"
-            >
-              Book Appointment
-            </Link>
-
           </div>
         </div>
       )}
