@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from 'react';
+import { services } from '@/data/services';
 
 export default function ContactPage() {
   const formspreeEndpoint = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT;
@@ -10,6 +11,7 @@ export default function ContactPage() {
     lastName: '',
     email: '',
     phone: '',
+    service: '',
     message: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -41,6 +43,7 @@ export default function ContactPage() {
           lastName: formData.lastName,
           email: formData.email,
           phone: formData.phone,
+          service: formData.service,
           message: formData.message,
           _subject: `New Appointment Request - ${formData.firstName} ${formData.lastName}`,
         }),
@@ -65,6 +68,7 @@ export default function ContactPage() {
         lastName: '',
         email: '',
         phone: '',
+        service: '',
         message: '',
       });
     } catch (error) {
@@ -96,7 +100,7 @@ export default function ContactPage() {
         {/* MAP SECTION */}
         <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
           <iframe
-            src="https://www.google.com/maps?q=loc:18.980009,73.1144911+(Dental+Essential+Advanced+Dental+Clinic)&z=18&iwloc=A&output=embed"
+            src="https://www.google.com/maps?q=Dental%20Essential%20Advanced%20Dental%20Clinic&ll=18.980009,73.1144911&z=18&output=embed"
             height="350"
             className="w-full"
             style={{ border: 0 }}
@@ -179,14 +183,30 @@ export default function ContactPage() {
               required
             />
 
-            <input
-              type="tel"
-              value={formData.phone}
-              onChange={(event) => setFormData((prev) => ({ ...prev, phone: event.target.value }))}
-              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-400 focus:border-sky-400 outline-none bg-white text-gray-900 placeholder:text-gray-500"
-              placeholder="Phone Number"
-              required
-            />
+            <div className="grid md:grid-cols-2 gap-6">
+              <input
+                type="tel"
+                value={formData.phone}
+                onChange={(event) => setFormData((prev) => ({ ...prev, phone: event.target.value }))}
+                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-400 focus:border-sky-400 outline-none bg-white text-gray-900 placeholder:text-gray-500"
+                placeholder="Phone Number"
+                required
+              />
+
+              <select
+                value={formData.service}
+                onChange={(event) => setFormData((prev) => ({ ...prev, service: event.target.value }))}
+                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-400 focus:border-sky-400 outline-none bg-white text-gray-900"
+                required
+              >
+                <option value="" disabled>Select Service</option>
+                {services.map((service) => (
+                  <option key={service.slug} value={service.title}>
+                    {service.title}
+                  </option>
+                ))}
+              </select>
+            </div>
 
             <textarea
               value={formData.message}
