@@ -35,6 +35,10 @@ export default function Navbar() {
     { name: 'Clear Aligners', path: '/services/clear-aligners' },
     { name: 'Smile Designing', path: '/services/smile-designing' },
     { name: 'Pediatric Dentistry', path: '/services/pediatric-dentistry' },
+    { name: 'Crowns and Bridges', path: '/services/crowns-and-bridges' },
+    { name: 'Dentures', path: '/services/dentures' },
+    { name: 'Wisdom Tooth Extraction', path: '/services/wisdom-tooth-extraction' },
+    { name: 'Full Mouth Rehabilitation', path: '/services/full-mouth-rehabilitation' },
   ];
 
   return (

@@ -62,8 +62,11 @@ export default function ReviewsCarousel() {
   return (
     <section className="py-16 bg-amber-50/50">
       <div className="max-w-5xl mx-auto px-4">
+        <p className="text-sky-600 text-2xl md:text-3xl font-bold mb-2">
+          Success Stories
+        </p>
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-10">
-          Happy Patient Saying..
+          Happy Patient Saying....
         </h2>
 
         <div className="grid md:grid-cols-2 gap-6 mb-8">

@@ -31,7 +31,7 @@ export default function DoctorProfileCarousel() {
     <section className="bg-white py-16">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-10">
-          <span className="text-pink-500 font-semibold tracking-wider text-sm uppercase">Doctor Profile</span>
+          <span className="text-pink-500 text-xl md:text-2xl font-semibold tracking-wider uppercase">Doctor Profile</span>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mt-2">
             Meet Our Dentist In Panvel
           </h2>
