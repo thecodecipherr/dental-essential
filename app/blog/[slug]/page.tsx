@@ -1,6 +1,8 @@
 import { blogPosts, getBlogPostBySlug, getAllBlogSlugs, formatDate } from '@/data/blog';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import Image from 'next/image';
+import BlogCard from '@/components/BlogCard';
 
 // Generate static params for all blog posts
 export function generateStaticParams() {
@@ -45,13 +47,13 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
   // Get related posts (same category, excluding current)
   const relatedPosts = blogPosts
     .filter(p => p.category === post.category && p.slug !== post.slug)
-    .slice(0, 2);
+    .slice(0, 3);
 
   // If not enough related posts in same category, add from other categories
-  if (relatedPosts.length < 2) {
+  if (relatedPosts.length < 3) {
     const otherPosts = blogPosts
       .filter(p => p.slug !== post.slug && !relatedPosts.includes(p))
-      .slice(0, 2 - relatedPosts.length);
+      .slice(0, 3 - relatedPosts.length);
     relatedPosts.push(...otherPosts);
   }
 
@@ -121,10 +123,14 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
       {/* Featured Image */}
       <section className="bg-white pt-8 pb-4">
         <div className="max-w-4xl mx-auto px-4">
-          <div className="relative h-64 md:h-96 bg-gradient-to-br from-sky-100 to-sky-200 rounded-2xl overflow-hidden shadow-lg -mt-16">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <span className="text-8xl opacity-40">📖</span>
-            </div>
+          <div className="relative h-64 md:h-96 rounded-2xl overflow-hidden shadow-lg -mt-16">
+            <Image
+              src={post.featuredImage}
+              alt={post.title}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 1024px"
+            />
           </div>
         </div>
       </section>
@@ -245,27 +251,9 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
               <span className="text-sky-500">Articles</span>
             </h2>
 
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {relatedPosts.map((relatedPost) => (
-                <Link
-                  key={relatedPost.slug}
-                  href={`/blog/${relatedPost.slug}`}
-                  className="bg-white p-6 rounded-xl border border-gray-100 hover:border-sky-200 shadow-sm hover:shadow-md transition-all group"
-                >
-                  <span className="text-sky-600 text-sm font-medium">
-                    {relatedPost.category}
-                  </span>
-                  <h3 className="font-semibold text-gray-800 group-hover:text-sky-600 transition-colors mt-2 mb-3 line-clamp-2">
-                    {relatedPost.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm line-clamp-2 mb-4">
-                    {relatedPost.excerpt}
-                  </p>
-                  <div className="flex items-center justify-between text-sm text-gray-500">
-                    <span>{relatedPost.author.name}</span>
-                    <span>{relatedPost.readTime}</span>
-                  </div>
-                </Link>
+                <BlogCard key={relatedPost.slug} post={relatedPost} />
               ))}
             </div>
 

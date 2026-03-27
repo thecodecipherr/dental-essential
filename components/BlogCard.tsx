@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { BlogPost, formatDate } from '@/data/blog';
 
 interface BlogCardProps {
@@ -8,13 +9,15 @@ interface BlogCardProps {
 export default function BlogCard({ post }: BlogCardProps) {
   return (
     <article className="bg-white rounded-xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
-      {/* Featured Image Placeholder */}
-      <div className="relative h-48 bg-gradient-to-br from-sky-100 to-sky-200 overflow-hidden">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <svg className="w-14 h-14 text-sky-500/40" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-          </svg>
-        </div>
+      {/* Featured Image */}
+      <div className="relative h-48 overflow-hidden">
+        <Image
+          src={post.featuredImage}
+          alt={post.title}
+          fill
+          className="object-cover group-hover:scale-105 transition-transform duration-500"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
         {/* Category Badge */}
         <div className="absolute top-4 left-4">
           <span className="bg-sky-500 text-white text-xs font-medium px-3 py-1 rounded-full">
