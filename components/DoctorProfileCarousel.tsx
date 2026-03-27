@@ -31,7 +31,7 @@ export default function DoctorProfileCarousel() {
     <section className="bg-white py-16">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-10">
-          <span className="text-pink-500 font-semibold tracking-wider text-sm uppercase">Doctor Profile</span>
+          <span className="text-pink-500 text-xl md:text-2xl font-semibold tracking-wider uppercase">Doctor Profile</span>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mt-2">
             Meet Our Dentist In Panvel
           </h2>
@@ -94,7 +94,7 @@ export default function DoctorProfileCarousel() {
               
               <div className="mb-6">
                 <p className="font-bold text-gray-800">Chief Dentist,</p>
-                <p className="font-bold text-gray-800">10+ Years Experience</p>
+                <p className="font-bold text-gray-800">16+ Years Experience</p>
               </div>
 
               <p className="text-gray-600 leading-relaxed mb-8">
@@ -107,15 +107,15 @@ export default function DoctorProfileCarousel() {
               {/* Stats */}
               <div className="grid grid-cols-3 gap-4 border-t pt-8">
                 <div className="text-center">
-                  <p className="text-2xl md:text-3xl font-bold text-gray-800">5000+</p>
+                  <p className="text-2xl md:text-3xl font-bold text-gray-800">200+</p>
                   <p className="text-gray-500 text-sm">Patients Treated</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-2xl md:text-3xl font-bold text-gray-800">10+</p>
-                  <p className="text-gray-500 text-sm">Dental Certificates</p>
+                  <p className="text-2xl md:text-3xl font-bold text-gray-800">1</p>
+                  <p className="text-gray-500 text-sm">Certificate</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-2xl md:text-3xl font-bold text-gray-800">10+</p>
+                  <p className="text-2xl md:text-3xl font-bold text-gray-800">16+</p>
                   <p className="text-gray-500 text-sm">Years Experience</p>
                 </div>
               </div>

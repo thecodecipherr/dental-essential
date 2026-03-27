@@ -4,6 +4,7 @@ import { blogPosts } from '@/data/blog';
 import BlogCard from '@/components/BlogCard';
 import Link from 'next/link';
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function BlogPage() {
   // Get unique categories
@@ -80,10 +81,14 @@ export default function BlogPage() {
             <div className="bg-gradient-to-r from-sky-50 to-blue-50 rounded-2xl overflow-hidden">
               <div className="grid lg:grid-cols-2 gap-8 p-8">
                 {/* Image */}
-                <div className="relative h-64 lg:h-auto bg-gradient-to-br from-sky-200 to-sky-300 rounded-xl overflow-hidden">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-8xl opacity-40">📰</span>
-                  </div>
+                <div className="relative h-64 lg:h-auto rounded-xl overflow-hidden">
+                  <Image
+                    src={filteredPosts[0].featuredImage}
+                    alt={filteredPosts[0].title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
                   <div className="absolute top-4 left-4">
                     <span className="bg-pink-500 text-white text-xs font-medium px-3 py-1 rounded-full">
                       Featured
@@ -183,7 +188,7 @@ export default function BlogPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/book"
+              href="/contact"
               className="bg-sky-500 hover:bg-sky-600 text-white px-8 py-3 rounded-lg font-semibold shadow-lg transition-colors"
             >
               Book Appointment

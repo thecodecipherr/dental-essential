@@ -23,7 +23,10 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors mb-4"
             >
-              📅 Book on Practo
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10m-13 9h16a1 1 0 001-1V7a1 1 0 00-1-1H4a1 1 0 00-1 1v12a1 1 0 001 1z" />
+              </svg>
+              <span>Book on Practo</span>
             </a>
             <div className="flex gap-3 mt-2">
               <a href="#" className="w-8 h-8 bg-sky-600 hover:bg-sky-700 rounded-full flex items-center justify-center transition-colors">

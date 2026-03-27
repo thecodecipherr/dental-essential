@@ -16,430 +16,171 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
-    slug: "importance-of-regular-dental-checkups",
-    title: "The Importance of Regular Dental Checkups",
-    excerpt: "Discover why visiting your dentist every six months is crucial for maintaining optimal oral health and preventing serious dental problems.",
-    featuredImage: "/blog/checkup.jpg",
+    slug: "teeth-whitening-in-mumbai-cost-and-considerations",
+    title: "Teeth Whitening in Mumbai: Cost and Considerations",
+    excerpt: "Do you want to smile more broadly and feel more confident? Whitening your teeth might be the solution. Learn pricing, treatment options, and what to expect in Mumbai.",
+    featuredImage: "/images/blog/teeth-whitening.jpg",
     author: {
-      name: "Dr. Sameer",
+      name: "Dental Essential ",
       avatar: "/doctors/dr-sameer.jpg",
-      role: "Lead Dentist"
+      role: "Dental Team"
     },
-    publishDate: "2026-02-05",
-    readTime: "5 min read",
-    category: "Preventive Care",
-    content: `
-## Why Regular Dental Checkups Matter
-
-Regular dental checkups are the cornerstone of good oral health. Many people only visit the dentist when they experience pain or notice a problem, but by then, the issue may have already progressed significantly.
-
-### Early Detection Saves Time and Money
-
-During a routine checkup, your dentist can identify early signs of:
-
-- **Cavities** - Small cavities can be filled quickly and painlessly
-- **Gum disease** - Early-stage gingivitis is reversible with proper care
-- **Oral cancer** - Early detection dramatically improves treatment outcomes
-- **Worn fillings** - Replacing them before they fail prevents further damage
-
-### What Happens During a Checkup?
-
-A comprehensive dental checkup typically includes:
-
-1. **Visual examination** of teeth, gums, and mouth
-2. **X-rays** to detect hidden problems
-3. **Professional cleaning** to remove plaque and tartar
-4. **Oral cancer screening**
-5. **Discussion** of any concerns or changes in your oral health
-
-### How Often Should You Visit?
-
-For most adults, visiting the dentist every six months is recommended. However, some people may need more frequent visits based on their:
-
-- Risk of cavities or gum disease
-- Overall health conditions
-- Smoking or tobacco use
-- Pregnancy
-
-### The Bottom Line
-
-Prevention is always better than cure. Regular dental checkups help you maintain a healthy smile, catch problems early, and save money on extensive treatments down the road.
-
-**Schedule your next checkup today and invest in your oral health!**
-    `
-  },
-  {
-    slug: "foods-that-strengthen-your-teeth",
-    title: "10 Foods That Strengthen Your Teeth Naturally",
-    excerpt: "Learn about the best foods to include in your diet for stronger teeth and healthier gums. Your diet plays a crucial role in dental health.",
-    featuredImage: "/blog/healthy-foods.jpg",
-    author: {
-      name: "Dr. Sameer",
-      avatar: "/doctors/dr-sameer.jpg",
-      role: "Lead Dentist"
-    },
-    publishDate: "2026-01-28",
-    readTime: "7 min read",
-    category: "Nutrition",
-    content: `
-## Eat Your Way to Stronger Teeth
-
-What you eat directly affects your dental health. While we often focus on foods to avoid, there are many delicious foods that actually strengthen your teeth and promote healthy gums.
-
-### 1. Dairy Products
-
-**Cheese, milk, and yogurt** are rich in calcium and phosphates that help remineralize tooth enamel. Cheese also stimulates saliva production, which naturally cleanses your mouth.
-
-### 2. Leafy Greens
-
-**Spinach, kale, and other leafy greens** are packed with calcium, folic acid, and vitamins that benefit your teeth and gums.
-
-### 3. Crunchy Fruits and Vegetables
-
-**Apples, carrots, and celery** act as natural toothbrushes. Their crunchy texture stimulates gums and increases saliva production.
-
-### 4. Nuts and Seeds
-
-**Almonds, cashews, and sesame seeds** provide calcium and protein while being low in sugar.
-
-### 5. Fish
-
-**Fatty fish like salmon** are high in vitamin D, which helps your body absorb calcium effectively.
-
-### 6. Green Tea
-
-Contains **polyphenols** that reduce bacteria and acid in the mouth, helping prevent cavities and gum disease.
-
-### 7. Water
-
-The best beverage for your teeth! Water helps wash away food particles and keeps your mouth hydrated.
-
-### 8. Eggs
-
-Rich in **vitamin D and phosphorus**, eggs help protect and rebuild tooth enamel.
-
-### 9. Strawberries
-
-Contain **malic acid**, a natural enamel whitener, plus vitamin C for gum health.
-
-### 10. Garlic
-
-Has **allicin**, a compound with antibacterial properties that fights harmful oral bacteria.
-
-### Foods to Limit
-
-While enjoying tooth-friendly foods, remember to limit:
-- Sugary snacks and drinks
-- Acidic foods and beverages
-- Sticky candies
-- Excessive coffee and tea
-
-**A balanced diet combined with good oral hygiene is your recipe for a lifetime of healthy smiles!**
-    `
-  },
-  {
-    slug: "understanding-root-canal-treatment",
-    title: "Understanding Root Canal Treatment: Myths vs Facts",
-    excerpt: "Root canal treatment has an unfair reputation. Learn the truth about this pain-relieving procedure and why it's nothing to fear.",
-    featuredImage: "/blog/root-canal.jpg",
-    author: {
-      name: "Dr. Sameer",
-      avatar: "/doctors/dr-sameer.jpg",
-      role: "Lead Dentist"
-    },
-    publishDate: "2026-01-20",
-    readTime: "6 min read",
-    category: "Treatments",
-    content: `
-## Root Canal: Separating Fact from Fiction
-
-Few dental procedures have as bad a reputation as root canal treatment. But is this reputation deserved? Let's separate the myths from the facts.
-
-### Myth 1: Root Canals Are Extremely Painful
-
-**FACT:** Modern root canal treatment is virtually painless. With today's anesthetics and techniques, patients often report that the procedure feels similar to getting a filling. The truth is, a root canal *relieves* the pain caused by infection.
-
-### Myth 2: It's Better to Pull the Tooth
-
-**FACT:** Saving your natural tooth is almost always the better option. Natural teeth:
-- Function better than artificial replacements
-- Maintain your natural bite and jaw structure
-- Don't require ongoing replacements
-- Are more cost-effective long-term
-
-### Myth 3: Root Canals Cause Illness
-
-**FACT:** This myth stems from flawed research from nearly 100 years ago. Modern scientific evidence shows absolutely no connection between root canal treatment and disease elsewhere in the body.
-
-### What Actually Happens During a Root Canal?
-
-1. **Anesthesia** - The area is completely numbed
-2. **Access** - A small opening is made in the tooth
-3. **Cleaning** - Infected pulp is removed
-4. **Shaping** - The canal is cleaned and shaped
-5. **Filling** - The canal is filled with biocompatible material
-6. **Restoration** - A crown protects the tooth
-
-### Signs You May Need a Root Canal
-
-- Severe toothache
-- Prolonged sensitivity to hot or cold
-- Darkening of the tooth
-- Swelling or tenderness in nearby gums
-- A persistent pimple on the gums
-
-### Recovery Is Quick
-
-Most patients return to normal activities the next day. Some mild discomfort is normal but easily managed with over-the-counter pain relievers.
-
-**Don't let myths keep you from getting the treatment you need. Root canals save teeth and relieve pain!**
-    `
-  },
-  {
-    slug: "childrens-dental-health-guide",
-    title: "A Parent's Guide to Children's Dental Health",
-    excerpt: "From first tooth to teen years, learn how to establish good dental habits that will last your child a lifetime.",
-    featuredImage: "/blog/kids-dental.jpg",
-    author: {
-      name: "Dr. Sameer",
-      avatar: "/doctors/dr-sameer.jpg",
-      role: "Lead Dentist"
-    },
-    publishDate: "2026-01-15",
+    publishDate: "2024-03-05",
     readTime: "8 min read",
-    category: "Pediatric Care",
+    category: "Cosmetic Dentistry",
     content: `
-## Building Healthy Smiles from Day One
+Do you want to smile more broadly and feel more confident? Whitening your teeth might be the solution. Many factors can affect how much teeth whitening in Mumbai costs. Let's examine what teeth whitening is, the reasons for price variations, and what to anticipate in terms of prices.
 
-Your child's dental health journey begins before their first tooth appears. As a parent, you play a crucial role in establishing habits that will protect their teeth for life.
+## How much does teeth whitening cost in Mumbai and what is teeth whitening?
 
-### Baby's First Teeth (0-12 months)
+Before examining the price of teeth whitening in Mumbai, let's start with defining teeth whitening.
 
-Even before teeth appear:
-- **Clean gums** with a soft, damp cloth after feedings
-- **Avoid** putting baby to bed with a bottle
-- **Schedule** their first dental visit by age 1
+To put it simply, teeth whitening, also known as dental bleaching, is a cosmetic dentistry process that seeks to make your teeth appear whiter. It is a well-liked procedure for people who want to get rid of stains and discolorations brought on by ageing, smoking, or ingesting particular foods and beverages.
 
-### Toddler Years (1-3 years)
+Usually, a bleaching solution is used to the teeth during the teeth-whitening procedure to assist remove stains and brightening their colour. Professionals can perform this procedure in a dental facility, or patients can use dentist-recommended whitening kits at home. It's crucial to remember that not all stains can be removed by teeth whitening, therefore it's essential to speak with a dentist before starting any whitening procedures.
 
-- Use a **rice-grain sized** amount of fluoride toothpaste
-- **Brush twice daily** - you'll need to do it for them
-- **Limit** sugary snacks and juice
-- Make brushing **fun** with songs and games
+## Mumbai teeth-whitening prices
 
-### Preschool Age (3-6 years)
+Mumbai teeth whitening prices might vary from INR 5,000 to INR 20,000 or more, based on the previously listed criteria. At-home kits might be less expensive than in-office treatments, often on the higher end of the scale.
 
-- Increase to a **pea-sized** amount of toothpaste
-- **Supervise** brushing - children need help until age 7-8
-- **Introduce flossing** when teeth touch
-- Consider **dental sealants** for molars
+To find the finest whitening solution for you and to receive an accurate cost estimate based on your unique demands, you must see a dentist.
 
-### School Age (6-12 years)
+## Why Do Teeth Whitening Prices Differ in India?
 
-- Teach **proper technique** for brushing and flossing
-- **Monitor** their routine - don't just trust them!
-- Address **thumb-sucking** if it continues past age 4
-- Watch for **orthodontic issues**
+The following factors influence the final rates for teeth whitening costs in Mumbai or anywhere else in India:
 
-### Teen Years
+1. **Treatment Type:** Teeth whitening procedures come in a variety of forms, including at-home whitening kits and in-office procedures. Although in-office procedures are typically more costly, they produce faster and more obvious effects.
+2. **Expertise of Dentist:** The cost may vary depending on the dentist's experience and skill level. Dentists with advanced training may bill more for their services.
+3. **Location:** Depending on the area, there may be differences in the cost of living and running a dental clinic. Teeth whitening procedures may cost more in cities with greater cost of living, like Mumbai, than in other places.
+4. **Reputation of the Clinic:** Clinics that have a solid track record of producing excellent outcomes may charge more for their services.
+5. **Extra Services:** Some teeth-whitening clinics also provide dental cleaning or consultations, which may have an impact on the final price.
 
-- Discuss the effects of **diet choices** on teeth
-- Address concerns about **appearance**
-- Consider **whitening** only after consulting dentist
-- If playing sports, use a **mouthguard**
+## A final thought on Teeth whitening cost in Mumbai
 
-### Making Dental Visits Positive
+Whitening your teeth might be a great method to boost your confidence and smile more. While teeth whitening costs in Mumbai can vary, it's important to consider the variables that may influence costs and speak with a dentist to choose the best course of action. You can get a whiter, more attractive smile with the appropriate technique.
 
-1. **Start early** - familiarity reduces fear
-2. **Stay positive** - avoid sharing your own dental anxiety
-3. **Don't bribe** - it suggests there's something to fear
-4. **Choose a pediatric dentist** who specializes in children
+## Frequently Asked Questions (FAQs) regarding Teeth Whitening Cost in Mumbai
 
-### Common Childhood Dental Issues
+1. **What is the price of teeth whitening in Mumbai?**
+The type of therapy and the clinic can have an impact on the price of teeth whitening in Mumbai. Prices can generally be found anywhere from INR 5,000 and INR 20,000 or more.
 
-- **Cavities** - the most common childhood disease
-- **Thumb-sucking** - usually harmless if stopped early
-- **Tooth grinding** - often outgrown naturally
-- **Dental anxiety** - addressed with patience and positive experiences
+2. **What variables may influence tooth whitening prices?**
+The kind of therapy, the dentist's experience, the clinic's location, and any other services provided can all affect how much teeth whitening costs.
 
-**Your investment in your child's dental health today will pay dividends for their entire life!**
+3. **Is it possible to get various teeth-whitening procedures in Mumbai?**
+Yes, several teeth-whitening procedures are available, such as at-home whitening kits and in-office procedures. Although in-office procedures are usually more costly, they produce faster and more obvious effects.
+
+4. **What is the duration of tooth whitening?**
+The length of teeth whitening effects is subject to change based on several factors, including lifestyle choices, dental health, and food. The results of tooth whitening often persist between six months and two years.
+
+5. **Is it safe to whiten teeth?**
+When done by a licenced dentist, teeth whitening is regarded as safe. But be careful, using too many whitening solutions might cause tooth sensitivity and other problems. Instead, pay attention to what the dentist says.
+
+6. **If I have sensitive teeth, can I still have teeth whitening?**
+If you have sensitive teeth, it is best to speak with a dentist before getting teeth whitening. Your dentist can evaluate your oral health and suggest the best course of action for you.
+
+7. **Do teeth whitening side effects exist?**
+After teeth whitening, some people may have gum irritation or tooth sensitivity. When used properly, these side effects are usually transient and manageable.
+
+8. **How can I keep my teeth whitening results going?**
+It's crucial to preserve the effects of teeth whitening by maintaining proper oral hygiene, avoiding foods and beverages that can discolour teeth, and according to any post-treatment advice your dentist may provide.
+
+9. **Does insurance cover tooth whitening?**
+Teeth whitening is typically not covered by dental insurance since it is regarded as a cosmetic procedure. It's advisable to contact your insurance company to find out if there is any coverage, though.
+
+10. **How can I locate a trustworthy dentist in Mumbai that offers teeth whitening?**
+By getting referrals from friends and relatives, reading internet reviews, and making appointments to go over your options, you can locate a trustworthy dentist in Mumbai for teeth whitening.
+
+**If you are planning treatment, always consult a qualified dentist for personalized advice.**
     `
   },
   {
-    slug: "dental-implants-complete-guide",
-    title: "Dental Implants: Your Complete Guide to a Permanent Smile",
-    excerpt: "Everything you need to know about dental implants - from candidacy to recovery, costs, and long-term care.",
-    featuredImage: "/blog/implants.jpg",
+    slug: "braces-vs-aligners-which-is-best-for-you",
+    title: "Braces vs. Aligners - which is best for you",
+    excerpt: "Braces vs. aligners - which is best for you. Orthodontic treatment has come a long way, offering patients effective options to achieve a straighter smile.",
+    featuredImage: "/images/services/braces-aligners.jpg",
     author: {
-      name: "Dr. Sameer",
+      name: "Dental Essential ",
       avatar: "/doctors/dr-sameer.jpg",
-      role: "Lead Dentist"
+      role: "Dental Team"
     },
-    publishDate: "2026-01-08",
-    readTime: "10 min read",
+    publishDate: "2024-02-08",
+    readTime: "6 min read",
+    category: "Orthodontics",
+    content: `
+## Braces vs. Aligners - which is best for you
+
+Orthodontic treatment has come a long way, offering patients effective options to achieve a straighter smile. Two of the most popular choices are traditional braces and clear aligners. Both can produce excellent outcomes, but they differ in comfort, appearance, maintenance, and price.
+
+### Traditional Braces
+
+Traditional braces use metal brackets and wires to gradually move teeth into correct positions.
+
+- Excellent for complex alignment and bite issues
+- Fixed appliance, so treatment compliance is easier
+- Can cause mild discomfort after adjustments
+- More visible compared to aligners
+
+### Clear Aligners
+
+Clear aligners are transparent, removable trays custom-made to move teeth over time.
+
+- Nearly invisible and more aesthetic
+- Removable for meals and brushing
+- Great for mild to moderate corrections
+- Requires disciplined wear (20-22 hours/day)
+
+### Which One Should You Choose?
+
+The right option depends on your dental condition, lifestyle, and treatment goals.
+
+1. Choose **braces** if your case is complex or if you want a non-removable option.
+2. Choose **aligners** if you want a discreet look and can follow wear instructions strictly.
+
+Consult an orthodontist to determine the best treatment plan for your smile.
+    `
+  },
+  {
+    slug: "myths-and-facts-about-dental-implants",
+    title: "Myths and Facts about Dental Implants: Procedures, Advantages, and Recovery",
+    excerpt: "Dental implant treatment has revolutionized the field of dentistry, offering a reliable solution for individuals seeking to restore their smiles and regain functionality.",
+    featuredImage: "/images/services/dental-implants.jpg",
+    author: {
+      name: "Dental Essential ",
+      avatar: "/doctors/dr-sameer.jpg",
+      role: "Dental Team"
+    },
+    publishDate: "2024-01-08",
+    readTime: "7 min read",
     category: "Treatments",
     content: `
-## The Ultimate Guide to Dental Implants
+## Myths and Facts about Dental Implants
 
-Dental implants have revolutionized tooth replacement. If you're considering implants, this comprehensive guide will help you understand everything about this life-changing treatment.
+Dental implant treatment has revolutionized the field of dentistry, offering a reliable solution for individuals seeking to restore their smiles and regain functionality.
 
-### What Are Dental Implants?
+### Common Myths
 
-Dental implants are titanium posts surgically placed into your jawbone to serve as artificial tooth roots. They provide a permanent foundation for replacement teeth that look, feel, and function like natural teeth.
+1. **Myth:** Implants are painful.
+Fact: The procedure is done under anesthesia and discomfort is usually manageable.
 
-### Components of a Dental Implant
+2. **Myth:** Implants look fake.
+Fact: Modern implant crowns are designed to match your natural teeth.
 
-1. **Implant** - Titanium post that fuses with jawbone
-2. **Abutment** - Connector that holds the crown
-3. **Crown** - Visible tooth that matches your natural teeth
+3. **Myth:** Recovery takes forever.
+Fact: Initial recovery is often quick, though full integration takes a few months.
 
-### Who Is a Good Candidate?
+### Key Advantages
 
-Ideal candidates have:
-- **Adequate bone density** in the jaw
-- **Healthy gums** free of periodontal disease
-- **Good overall health** for surgical procedures
-- **Commitment** to proper oral hygiene
+- Restores chewing function and speech
+- Helps preserve jawbone structure
+- Offers long-term durability with proper care
+- Does not rely on adjacent teeth for support
 
-### The Implant Process
+### Recovery Overview
 
-**Stage 1: Consultation**
-- Comprehensive examination
-- 3D imaging and X-rays
-- Treatment planning
+Most patients return to routine activities soon after the procedure. Regular follow-ups and good oral hygiene are important for successful long-term outcomes.
 
-**Stage 2: Implant Placement**
-- Minor surgical procedure
-- Implant placed in jawbone
-- Temporary restoration if needed
-
-**Stage 3: Osseointegration**
-- Healing period of 3-6 months
-- Implant fuses with bone
-- Regular check-ups to monitor progress
-
-**Stage 4: Final Restoration**
-- Abutment attached
-- Custom crown created and placed
-- Final adjustments made
-
-### Benefits of Dental Implants
-
-- **Look and function** like natural teeth
-- **Preserve jawbone** and prevent bone loss
-- **Don't affect** adjacent healthy teeth
-- **Can last a lifetime** with proper care
-- **No special cleaning** required
-
-### Caring for Your Implants
-
-- Brush twice daily
-- Floss daily
-- Regular dental checkups
-- Avoid chewing hard objects
-- Quit smoking if applicable
-
-### Investment in Your Smile
-
-While implants have a higher upfront cost than other options, their longevity and natural function make them cost-effective long-term.
-
-**Dental implants can transform your smile and your life. Schedule a consultation to see if they're right for you!**
-    `
-  },
-  {
-    slug: "teeth-whitening-options-explained",
-    title: "Teeth Whitening Options Explained: Which Is Right for You?",
-    excerpt: "From over-the-counter strips to professional treatments, learn about all your teeth whitening options and their effectiveness.",
-    featuredImage: "/blog/whitening.jpg",
-    author: {
-      name: "Dr. Sameer",
-      avatar: "/doctors/dr-sameer.jpg",
-      role: "Lead Dentist"
-    },
-    publishDate: "2025-12-28",
-    readTime: "6 min read",
-    category: "Cosmetic",
-    content: `
-## Brighten Your Smile: Whitening Options Compared
-
-A bright, white smile can boost your confidence and make a great first impression. But with so many whitening options available, how do you choose? Let's compare them all.
-
-### Why Do Teeth Become Discolored?
-
-**Extrinsic stains** (surface):
-- Coffee, tea, red wine
-- Tobacco use
-- Certain foods
-
-**Intrinsic stains** (inside tooth):
-- Aging
-- Medications (like tetracycline)
-- Excessive fluoride exposure
-- Trauma
-
-### Over-the-Counter Options
-
-**Whitening Toothpaste**
-- Mildly abrasive to remove surface stains
-- Results: 1-2 shades lighter
-- Timeline: 2-6 weeks
-- Cost: ₹200-500
-
-**Whitening Strips**
-- Peroxide-based gel on flexible strips
-- Results: 2-3 shades lighter
-- Timeline: 2-3 weeks
-- Cost: ₹1,000-3,000
-
-**Whitening Trays (Store-bought)**
-- One-size-fits-all trays with gel
-- Results: 2-4 shades lighter
-- Timeline: 1-2 weeks
-- Cost: ₹2,000-5,000
-
-### Professional Options
-
-**Take-Home Professional Trays**
-- Custom-fitted trays from your dentist
-- Stronger whitening gel
-- Results: 4-6 shades lighter
-- Timeline: 1-2 weeks
-- Cost: ₹8,000-15,000
-
-**In-Office Whitening**
-- Uses light-activated whitening agents
-- Results: 6-8 shades lighter in one visit
-- Timeline: 1-2 hours
-- Cost: ₹15,000-30,000
-
-### Which Option Is Best?
-
-**Choose OTC products if:**
-- You have minor staining
-- You're on a tight budget
-- You want to maintain professional results
-
-**Choose professional treatment if:**
-- You have significant discoloration
-- You want dramatic results fast
-- You have sensitive teeth (dentist can adjust)
-
-### Tips for Long-Lasting Results
-
-1. Avoid staining foods/drinks for 48 hours after whitening
-2. Use a straw for coffee and tea
-3. Brush after consuming staining substances
-4. Touch up every 6-12 months
-5. Maintain good oral hygiene
-
-### Important Considerations
-
-- Whitening doesn't work on crowns, veneers, or fillings
-- Some sensitivity is normal
-- Results vary based on the cause of staining
-- Not recommended during pregnancy
-
-**Ready for a brighter smile? Consult with us to find your perfect whitening solution!**
+For a complete evaluation and treatment planning, consult your dentist.
     `
   }
 ];
@@ -456,7 +197,7 @@ export function formatDate(dateString: string): string {
   const date = new Date(dateString);
   return date.toLocaleDateString('en-US', {
     year: 'numeric',
-    month: 'long',
+    month: 'short',
     day: 'numeric'
   });
 }
