@@ -3,44 +3,43 @@
 import { useState } from 'react';
 
 const reviews = [
-  { 
-    name: "Priya Sharma", 
-    initial: "P", 
-    date: "2 months Ago", 
-    review: "Dr. Sameer and his team provided exceptional care during my root canal treatment. The procedure was painless and the follow-up care was outstanding. I believe this is one of the best dental clinics in Panvel for all dental treatments." 
+  {
+    name: "Saltanat",
+    initial: "S",
+    date: "2 years ago · Verified",
+    review:
+      "Receptionist behaviour was very polite. Doctor attended very carefully. Very good service. Thank you Dr. Sameer."
   },
-  { 
-    name: "Rajesh Patel", 
-    initial: "R", 
-    date: "3 months Ago", 
-    review: "My dental implant procedure was seamless. The clinic's modern equipment and Dr. Sameer's expertise gave me complete confidence. I can finally chew well and enjoy all my favorite foods...thanks to the team of the best dentist in Panvel." 
+  {
+    name: "Vaishnavi Juvekar",
+    initial: "V",
+    date: "3 years ago · Verified",
+    review:
+      "Dr. Sameer identified my gum infection and suggested laser treatment, RCT and crowns to cure it. He is very knowledgeable, experienced, genuine, and truly an artist of dentistry. The composite filling was done amazingly. He is empathetic, caring, explains procedures clearly, and gives proper instructions. The staff is friendly and cooperative, and the clinic is spacious with state-of-the-art equipment. Overall, a very good experience."
   },
-  { 
-    name: "Anjali Desai", 
-    initial: "A", 
-    date: "1 month Ago", 
-    review: "My kids actually look forward to their dental visits now! The pediatric care here is wonderful. The staff is so patient and gentle with children. Highly recommend for families!" 
+  {
+    name: "Indira Menon",
+    initial: "I",
+    date: "3 years ago · Verified",
+    review:
+      "I went for tooth extraction, but Dr. Sameer advised root canal treatment and crown lengthening, saving my natural teeth. The clinic is very advanced, neat, and clean with all modern amenities. I also got partial dentures made on time. The entire treatment was painless and smooth. Very happy with my experience and would highly recommend Dr. Sameer."
   },
-  { 
-    name: "Arjun Mehta", 
-    initial: "A", 
-    date: "2 months Ago", 
-    review: "Got my braces done here and the transformation has been amazing. The team monitors progress regularly and the results exceeded my expectations! Professional service." 
+  {
+    name: "Shreeja Menon",
+    initial: "S",
+    date: "3 years ago · Verified",
+    review:
+      "Visited Dr. Sameer for dental implant consultation. He explained the entire process in detail. I was scared initially, but the procedure was smooth and painless. The clinic also has in-house X-ray facilities, and the staff is friendly and helpful. I would definitely recommend Dr. Sameer to friends and family."
   },
-  { 
-    name: "Sneha Kulkarni", 
-    initial: "S", 
-    date: "4 months Ago", 
-    review: "The smile designing treatment completely changed my confidence. Professional, caring staff and state-of-the-art facilities. Best dental clinic in Panvel without a doubt!" 
-  },
-  { 
-    name: "Vikram Singh", 
-    initial: "V", 
-    date: "1 month Ago", 
-    review: "Excellent experience with clear aligners treatment. Dr. Sameer explained the entire process clearly and the results are amazing. Highly recommended for anyone looking for quality dental care!" 
-  },
+  
+  {
+    name: "Niharika K",
+    initial: "N",
+    date: "4 years ago · Verified",
+    review:
+      "Can be recommended without any doubt. Painless treatment and excellent care for patients."
+  }
 ];
-
 export default function ReviewsCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const cardsToShow = 2;
@@ -137,6 +136,27 @@ export default function ReviewsCarousel() {
             Review us on Google
           </a>
         </div>
+
+        <div className="text-center mt-6">
+  <a
+    href="https://www.practo.com/navi-mumbai/doctor/dr-sameer-gharat-dentist-1/recommended"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-2 bg-[#13A6A1] hover:bg-[#0e8f8b] text-white px-6 py-3 rounded-full font-medium transition shadow-md"
+  >
+    <img
+      src="https://www.practo.com/providers/static/images/practo-logo.svg"
+      alt="Practo"
+      className="w-5 h-5"
+    />
+    View all verified reviews on Practo
+  </a>
+
+  <p className="text-sm text-gray-500 mt-3">
+    ★ Reviews shown are selected patient experiences.  
+    View all verified reviews on Practo for complete transparency.
+  </p>
+</div>
       </div>
     </section>
   );

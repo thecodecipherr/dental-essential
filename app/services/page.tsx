@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function ServicesPage() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen mt-22">
       {/* Hero Banner */}
       <section className="relative bg-gradient-to-br from-sky-500 to-sky-600 py-20">
         <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-10" />

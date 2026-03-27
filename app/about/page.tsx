@@ -5,9 +5,9 @@ export default function AboutPage() {
     <div className="w-full">
 
       {/* HERO SECTION */}
-      <div className="w-full h-[75vh] relative">
+      <div className="relative min-h-[90vh] mt-20 flex items-center overflow-hidden">
         <Image
-          src="/smilewomen.png"
+          src="/images/about/about.jpg"
           alt="Dental Essential"
           fill
           className="object-cover"
@@ -42,11 +42,11 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 px-6 items-center">
 
           <Image
-            src="/mission.jpg"
+            src="/images/about/mission.jpeg"
             alt="Our Mission"
-            width={500}
+            width={400}
             height={350}
-            className="rounded-lg shadow-lg"
+            className="rounded-lg shadow-lg ml-25"
           />
 
           <div>
@@ -113,7 +113,7 @@ export default function AboutPage() {
       <div className="bg-gray-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition">
         <div className="relative h-72 bg-gradient-to-br from-sky-100 to-sky-50 flex items-center justify-center">
           <Image
-            src="/images/staff/orthodontist.jpeg"
+            src="/images/about/orthodontist.png"
             alt="Visiting Orthodontist"
             fill
             className="object-cover object-top"
@@ -136,7 +136,7 @@ export default function AboutPage() {
       <div className="bg-gray-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition">
         <div className="relative h-72 bg-gradient-to-br from-pink-100 to-pink-50 flex items-center justify-center">
           <Image
-            src="/images/staff/clinical-staff.jpeg"
+            src="/images/about/dental.jpg"
             alt="Clinical Staff"
             fill
             className="object-cover"
@@ -159,7 +159,7 @@ export default function AboutPage() {
       <div className="bg-gray-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition">
         <div className="relative h-72 bg-gradient-to-br from-amber-100 to-amber-50 flex items-center justify-center">
           <Image
-            src="/images/staff/reception.jpeg"
+            src="/images/about/reception.jpg"
             alt="Front Desk Staff"
             fill
             className="object-cover"
@@ -182,7 +182,7 @@ export default function AboutPage() {
       <div className="bg-gray-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition">
         <div className="relative h-72 bg-gradient-to-br from-purple-100 to-purple-50 flex items-center justify-center">
           <Image
-            src="/images/staff/pediatric.jpeg"
+            src="/images/about/pediatric.jpg"
             alt="Pediatric Dentist"
             fill
             className="object-cover object-top"
@@ -205,7 +205,7 @@ export default function AboutPage() {
       <div className="bg-gray-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition">
         <div className="relative h-72 bg-gradient-to-br from-teal-100 to-teal-50 flex items-center justify-center">
           <Image
-            src="/images/staff/sterilization.jpeg"
+            src="/images/about/steralization.jpg"
             alt="Sterilization Staff"
             fill
             className="object-cover"
