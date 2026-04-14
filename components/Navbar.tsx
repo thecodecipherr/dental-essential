@@ -56,20 +56,20 @@ export default function Navbar() {
             </Link>
           ))}
 
-          {/* Services */}
+          {/* Treatments */}
           <div
             onMouseEnter={() => setServicesOpen(true)}
             onMouseLeave={() => setServicesOpen(false)}
             className="relative"
           >
             <button className="text-gray-700 hover:text-sky-600">
-              Services
+              Treatments
             </button>
 
             {servicesOpen && (
               <div className="absolute top-full mt-2 bg-white shadow rounded w-56">
-                <Link href="/services" className="block px-4 py-2 hover:bg-gray-100">
-                  View All Services
+                <Link href="/treatments" className="block px-4 py-2 hover:bg-gray-100">
+                  View All Treatments
                 </Link>
               </div>
             )}

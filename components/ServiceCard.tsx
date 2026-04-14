@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Service } from '@/data/services';
+import { Service } from '@/data/treatments';
 
 interface ServiceCardProps {
   service: Service;
@@ -30,7 +30,7 @@ export default function ServiceCard({ service }: ServiceCardProps) {
         </p>
 
         <Link
-          href={`/services/${service.slug}`}
+          href={`/treatments/${service.slug}`}
           className="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white px-5 py-2.5 rounded-lg font-medium transition-colors duration-200 shadow-sm hover:shadow"
         >
           Learn More

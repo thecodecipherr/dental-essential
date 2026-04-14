@@ -1,7 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from 'react';
-import { services } from '@/data/services';
+import { services } from '@/data/treatments';
 
 export default function ContactPage() {
   const formspreeEndpoint = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT;
@@ -199,7 +199,7 @@ export default function ContactPage() {
                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-400 focus:border-sky-400 outline-none bg-white text-gray-900"
                 required
               >
-                <option value="" disabled>Select Service</option>
+                <option value="" disabled>Select Treatment</option>
                 {services.map((service) => (
                   <option key={service.slug} value={service.title}>
                     {service.title}

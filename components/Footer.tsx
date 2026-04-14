@@ -56,7 +56,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link href="/" className="hover:text-sky-400 transition-colors">Home</Link></li>
               <li><Link href="/about" className="hover:text-sky-400 transition-colors">About Us</Link></li>
-              <li><Link href="/services" className="hover:text-sky-400 transition-colors">Services</Link></li>
+              <li><Link href="/treatments" className="hover:text-sky-400 transition-colors">Treatments</Link></li>
               <li><Link href="/blog" className="hover:text-sky-400 transition-colors">Blog</Link></li>
               <li><Link href="/contact" className="hover:text-sky-400 transition-colors">Contact</Link></li>
             </ul>
@@ -64,14 +64,14 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="text-white text-lg font-bold mb-4">Our Services</h3>
+            <h3 className="text-white text-lg font-bold mb-4">Our Treatments</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/services/painless-root-canal" className="hover:text-sky-400 transition-colors">Painless Root Canal</Link></li>
-              <li><Link href="/services/dental-implants" className="hover:text-sky-400 transition-colors">Dental Implants</Link></li>
-              <li><Link href="/services/braces" className="hover:text-sky-400 transition-colors">Dental Braces</Link></li>
-              <li><Link href="/services/clear-aligners" className="hover:text-sky-400 transition-colors">Clear Aligners</Link></li>
-              <li><Link href="/services/smile-designing" className="hover:text-sky-400 transition-colors">Smile Designing</Link></li>
-              <li><Link href="/services/pediatric-dentistry" className="hover:text-sky-400 transition-colors">Pediatric Dentistry</Link></li>
+              <li><Link href="/treatments/painless-root-canal" className="hover:text-sky-400 transition-colors">Painless Root Canal</Link></li>
+              <li><Link href="/treatments/dental-implants" className="hover:text-sky-400 transition-colors">Dental Implants</Link></li>
+              <li><Link href="/treatments/braces" className="hover:text-sky-400 transition-colors">Dental Braces</Link></li>
+              <li><Link href="/treatments/clear-aligners" className="hover:text-sky-400 transition-colors">Clear Aligners</Link></li>
+              <li><Link href="/treatments/smile-designing" className="hover:text-sky-400 transition-colors">Smile Designing</Link></li>
+              <li><Link href="/treatments/pediatric-dentistry" className="hover:text-sky-400 transition-colors">Pediatric Dentistry</Link></li>
             </ul>
           </div>
 

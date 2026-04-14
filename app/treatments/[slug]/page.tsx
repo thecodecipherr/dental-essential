@@ -1,22 +1,22 @@
-import { services, getServiceBySlug, getAllServiceSlugs } from '@/data/services';
+import { services as treatments, getServiceBySlug, getAllServiceSlugs } from '@/data/treatments';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
-// Generate static params for all services
+// Generate static params for all treatments
 export function generateStaticParams() {
   return getAllServiceSlugs().map((slug) => ({
     slug: slug,
   }));
 }
 
-// Generate metadata for each service page
+// Generate metadata for each treatment page
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const service = getServiceBySlug(slug);
   
   if (!service) {
     return {
-      title: 'Service Not Found | Dental Essential',
+      title: 'Treatment Not Found | Dental Essential',
     };
   }
 
@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
-export default async function ServiceDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function TreatmentDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const service = getServiceBySlug(slug);
 
@@ -41,13 +41,13 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
         <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-10" />
         <div className="max-w-7xl mx-auto px-4 relative">
           <Link 
-            href="/services" 
+            href="/treatments" 
             className="inline-flex items-center gap-2 text-sky-100 hover:text-white mb-6 transition-colors"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
-            Back to Services
+            Back to Treatments
           </Link>
           
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -66,7 +66,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
         </div>
       </section>
 
-      {/* Service Description */}
+      {/* Treatment Description */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -180,22 +180,22 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
         </div>
       </section>
 
-      {/* Related Services */}
+      {/* Related Treatments */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-center mb-8">
             <span className="text-pink-500">Other</span>{' '}
-            <span className="text-sky-500">Services</span>
+            <span className="text-sky-500">Treatments</span>
           </h2>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services
+            {treatments
               .filter(s => s.slug !== service.slug)
               .slice(0, 3)
               .map((relatedService) => (
                 <Link
                   key={relatedService.slug}
-                  href={`/services/${relatedService.slug}`}
+                  href={`/treatments/${relatedService.slug}`}
                   className="bg-white p-6 rounded-xl border-2 border-sky-100 hover:border-sky-300 shadow-sm hover:shadow-md transition-all group"
                 >
                   <h3 className="font-semibold text-gray-800 group-hover:text-sky-600 transition-colors mb-2">
@@ -210,10 +210,10 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
 
           <div className="text-center mt-8">
             <Link
-              href="/services"
+              href="/treatments"
               className="inline-flex items-center gap-2 text-sky-600 hover:text-sky-700 font-medium"
             >
-              View All Services
+              View All Treatments
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
